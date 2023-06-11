@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block includes %}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"/>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 {% endblock %}
 
 
@@ -13,6 +13,22 @@
         {% endfor %}
      {% endif %}
   {% endwith %}
-  Hello World!
-  
+  <body>
+    <section class="section is-large">
+      <h1 class="title is-1">Kajetan Knopp</h1>
+      <h2 class="subtitle is-1">
+        <span id="professions"></span><br/>
+
+      </h2>
+    </section>
+  </body>
+
+  <script>
+    var typed = new Typed('#professions', {
+      strings: ['Solving and optimizing complex models', 'Researching networks, combinatorial optimization, quantum computing, statistics and AI', 'Developing in Julia, Rust, C, C++, Python, R and Haskell'],
+      typeSpeed: 30,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
 {% endblock %}

@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import "nord.scss";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+// Set your brand colors
+$orange: $nord12;
+$yellow: $nord13;
+$green: $nord14;
+$turquoise: $nord8;
+$cyan: $nord9;
+$blue: $nord10;
+$purple: $nord15;
+$red: $nord11;
+
+// Update Bulma's global variables
+$family-sans-serif: "Lato", sans-serif;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+$black: $nord4;
+$black-bis: darken($nord4, 10%);
+$black-ter: darken($nord4, 20%);
+
+$white-ter: $nord2;
+$white-bis: lighten($nord1, 2%);
+$white: $nord0;
+$body-background-color: #242933;
+
+$grey-darker: $nord4;
+$grey-dark: mix($nord4, $nord5);
+$grey: $nord5;
+$grey-light: mix($nord5, $nord6);
+$grey-lighter: $nord6;
+
+// invert
+$yellow-invert: rgba($white, 0.7);
+$primary-invert: rgba($white, 0.7);
+
+// misc
+$tabs-border-bottom-width: 2px;
+
+@import "../bulma/sass/utilities/_all.sass";
+@import "../bulma/sass/grid/columns.sass";
+@import "../bulma/sass/elements/button.sass";
+@import "../bulma/sass/elements/icon.sass";
+@import "../bulma/sass/elements/title.sass";
+@import "../bulma/sass/base/generic.sass";
+@import "../bulma/sass/layout/section.sass";

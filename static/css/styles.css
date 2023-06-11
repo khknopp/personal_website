@@ -1,7 +1,10 @@
 html {
-  background-color: teal;
-  color: white;
   font-family: Arial;
+  prefers-color-scheme: dark;
+}
+
+:root {
+  --primary: #3949ab;
 }
 
 footer {
